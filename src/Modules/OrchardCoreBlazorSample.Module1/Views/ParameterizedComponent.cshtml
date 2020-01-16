@@ -1,0 +1,4 @@
+﻿@* This is a parameterized component rendering. The parameters are coming from Orchard Core shape rendering. 
+    See OrchardCoreBlazorSample.Module2/Views/Test/Index.cshtml to see how it's initialized. *@
+
+@(await Html.RenderComponentAsync<OrchardCoreBlazorSample.Module1.Blazor.Parameterized>(RenderMode.ServerPrerendered, new { FullName = Model.FullName }))

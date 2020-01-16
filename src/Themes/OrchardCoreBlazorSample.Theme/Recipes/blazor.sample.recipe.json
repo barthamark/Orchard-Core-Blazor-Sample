@@ -1,0 +1,47 @@
+{
+	"name": "OrchardCoreBlazorSample",
+	"displayName": "Blazor Sample",
+	"description": "Sample website for demonstrating Orchard Core modules using Blazor components.",
+	"author": "Márk Bartha",
+	"website": "http://markbartha.com",
+	"version": "1.0",
+	"issetuprecipe": true,
+	"categories": [ "default" ],
+	"tags": [ "sample", "developer" ],
+	"steps": [
+		{
+			"name": "feature",
+			"disable": [],
+			"enable": [
+				// SaaS
+				"OrchardCore.Admin",
+				"OrchardCore.Diagnostics",
+				"OrchardCore.DynamicCache",
+				"OrchardCore.HomeRoute",
+				"OrchardCore.Localization",
+				"OrchardCore.Features",
+				"OrchardCore.Navigation",
+				"OrchardCore.Recipes",
+				"OrchardCore.Resources",
+				"OrchardCore.Roles",
+				"OrchardCore.Settings",
+				"OrchardCore.Tenants",
+				"OrchardCore.Themes",
+				"OrchardCore.Users",
+				"OrchardCoreBlazorSample.Module1",
+				"OrchardCoreBlazorSample.Module2",
+
+				// Themes
+				"TheTheme",
+				"TheAdmin",
+				"SafeMode",
+				"OrchardCoreBlazorSample.Theme"
+			]
+		},
+		{
+			"name": "themes",
+			"admin": "TheAdmin",
+			"site": "OrchardCoreBlazorSample.Theme"
+		}
+	]
+}
